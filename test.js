@@ -14,7 +14,7 @@ function calculate(a = 1, b = 1, callback) {
     return callback(a, b);
 }
 
-function multiplay(a, b) {
+function multiply(a, b) {
     return a * b;
 }
 
@@ -23,16 +23,16 @@ function sum(a, b) {
 }
 
 function calculates(a, b, ...funs) {
-    let answers = []; // Clousure
+    let answers = []; // Closure
     funs.forEach(callback => answers.push(callback(a, b)));
     return answers;
 }
 
-console.log(calculate(2, 5, multiplay));
+console.log(calculate(2, 5, multiply));
 console.log(calculate(2, 5, sum));
 
 console.log('start ...');
-console.log(calculates(2, 5, multiplay, sum));
+console.log(calculates(2, 5, multiply, sum));
 console.log('end');
 
 async function readyFile(path) {
