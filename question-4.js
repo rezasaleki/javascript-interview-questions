@@ -11,7 +11,7 @@ arr.splice(0, arr.length);
 console.log('arr =>', arr);
 
 let item = ['ali', 'reza', 'sara'];
-let copy = item; // by refrence
+let copy = item; // by reference
 
 console.log(process.memoryUsage());
 

@@ -37,7 +37,6 @@ function test() {
 
 test();
 
-
 console.log(global);
 
 if (true) {

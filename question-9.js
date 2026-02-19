@@ -1,5 +1,5 @@
-// object literal 
-const persion1 = {
+// Object Literal 
+const person1 = {
     name: 'reza',
     age: 10,
     greet() {
@@ -7,7 +7,7 @@ const persion1 = {
     }
 };
 
-// constructor function 
+// Constructor Function 
 function Person(name, age) {
     this.name = name;
     this.age = age;

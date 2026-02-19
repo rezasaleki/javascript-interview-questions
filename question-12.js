@@ -34,7 +34,7 @@ console.log(counter.decrement()); // 1
 console.log(counter.getCount());  // 1
 
 
-function multiplay(a) {
+function multiply(a) {
     return function(b) {
         return a * b;
     }

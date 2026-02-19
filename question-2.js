@@ -2,7 +2,7 @@
 // === Strict Equality 
 
 5 == '5' // true (convert number to string)
-5 === '5' // false (number compear with string)
+5 === '5' // false (number compare with string)
 
 0 == false // true
 0 === false // false

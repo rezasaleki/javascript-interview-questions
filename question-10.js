@@ -5,15 +5,15 @@
 // 3.Task Queue (Callback Queue / Macrotask Queue) ---> FIFO , callback, setTimeout، setInterval، I/O، UI rendering
 // 4.Microtask Queue ---> callback, Promise.then، async/await، MutationObserver، process.nextTick
 
-console.log('1');
+console.log('1'); // CallStack -> 1
 
-setTimeout(() => {
+setTimeout(() => { // Macrotask -> 4 
     console.log('2');
 }, 0);
 
-Promise.resolve().then(() => console.log('3'));
+Promise.resolve().then(() => console.log('3')); // MicroTask -> 3 
 
-console.log('4');
+console.log('4'); // CallStack -> 2 
 
 // 1 4 3 2
 
@@ -21,8 +21,8 @@ console.log('4');
 
 // 1. Call Stack ---> console.log, Mathematical calculations
 // 2. Microtasks ---> Promise, await/async
-// 3. Macrotasks ---> setTimeout, setInterval
-// 4. Broswer    ---> ---
+// 3. Macrotask ---> setTimeout, setInterval
+// 4. Browser    ---> ---
 // 5. Return To Step 2
 
 console.log('start script');

@@ -3,7 +3,6 @@
 // 1. Primitive types ----> by value     ----> string, number, boolean, null, undefined, symbol, bigint
 // 2. Reference types ----> by reference ----> object, array, function, Date, RegExp, Map, Set
 
-
 let a = 10;
 let b = a; // copy a to b
 b = 20;
