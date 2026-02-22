@@ -76,7 +76,7 @@ function Person(name, age) {
     this.greet = function() {
       console.log(`سلام، من ${this.name} هستم`);
     };
-  }
+}
   
-  const ali = new Person('ali', 30);
-  ali.greet();
+const ali = new Person('ali', 30);
+ali.greet();
