@@ -1,5 +1,6 @@
 console.log(1 + '2' + 3); // "123"
 console.log(1 + 2 + '3'); // "33"
+console.log("2" + "3" - "4"); // 19
 
 console.log('5' - 2) // 3 -- number
 console.log('5' + 2) // "52" -- string
